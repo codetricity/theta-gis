@@ -10,4 +10,5 @@ nav:
   - Home: index.md
   - Use Cases: use_cases.md
   - Developer Resources: resources.md
+  - Image Metadata: sensors_image.md
 
