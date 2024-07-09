@@ -11,4 +11,6 @@ nav:
   - Use Cases: use_cases.md
   - Developer Resources: resources.md
   - Image Metadata: sensors_image.md
+  - GPS Accuracy: gps_accuracy.md
+  - Compass and Orientation: compass_orientation.md
 
