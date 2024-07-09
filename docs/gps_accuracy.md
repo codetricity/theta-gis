@@ -1,6 +1,6 @@
 # GPS Accuracy and Metadata
 
-![GPS Data](images/home/sensor_image/sensor_metadata.png)
+![GPS Data](images/sensor_image/sensor_metadata.png)
 
 The location accuracy of GIS chips of most mobile phones and also the THETA X chip vary based on satellite location and other factors.  The [US government official site on GPS](https://www.gps.gov/systems/gps/performance/accuracy/) indicates that mobile phones can provide 5m accuracy under an open sky. As a rough guide, the THETA X can be grouped with the accuracy of mobile phone.
 There are two strategies to store higher accuracy:
