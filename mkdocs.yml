@@ -9,5 +9,5 @@ theme:
 nav:
   - Home: index.md
   - Use Cases: use_cases.md
-  - Camera Capability: camera_capability.md
-  
+  - Developer Resources: resources.md
+
