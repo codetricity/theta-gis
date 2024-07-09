@@ -1,0 +1,8 @@
+site_name: RICOH IMU Sensors and GPS
+site_author: Oppkey
+
+theme:
+  name: material
+  logo: images/oppkey_logo.jpg
+  favicon: images/oppkey_logo.jpg
+  
