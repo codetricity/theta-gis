@@ -8,7 +8,7 @@ theme:
   favicon: images/oppkey_logo.jpg
 
 nav:
-  - Home: index.md
+  - Overview: index.md
   - Use Cases: use_cases.md
   - Developer Resources: resources.md
   - Image Metadata: sensors_image.md
