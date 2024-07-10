@@ -1,5 +1,6 @@
 site_name: RICOH IMU Sensors and GPS
 site_author: Oppkey
+site_url: https://codetricity.github.io/theta-gis/
 
 theme:
   name: material
@@ -18,3 +19,5 @@ nav:
   - gpx file: external_gps.md
   - Starting Video: starting_video.md
 
+plugins:
+  - social
