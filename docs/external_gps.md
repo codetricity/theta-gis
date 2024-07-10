@@ -2,6 +2,8 @@
 
 Some people in the community are  using separate .gpx files for GPS data.
 
+## Toyo's Manual Process Example with Z1 DNG Images
+
 The information below is from community member
 Toyo Fujita and is an example of a manual workflow that
 could be automated.
@@ -18,3 +20,13 @@ I think 7.3K THETA Z1 Blue line is awesome. The workflow is more complicated tha
 6. Drop them onto JPG2VID
 7. Upload .mp4 and .gpx files from Streetview Studio
 8. Proccessing… takes 24-48hours to complete.
+
+The process above uses UL2GSV by community member
+Dean Zwikel.  More [information on UL2GSV](https://community.theta360.guide/t/ul2gsv-updated-with-macos-support/8695?u=craig) is available
+in the community.
+
+
+## Video Data
+
+Refer to the section on [video metadata, CaMM data](/metadata_video) for information
+on the metadata format of the video files.
