@@ -4,7 +4,7 @@
 
 ![banner](images/home/banner.png)
 
-RICOH THETA cameras are widely to document the condition
+RICOH THETA cameras are widely used to document the condition
 of streets,  buildings, trails, power lines, construction
 sites and other types of infrastructure. THETA 360° images
 are used in virtual tours or overlayed onto maps.
