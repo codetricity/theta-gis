@@ -35,3 +35,7 @@ I also repeated the test with a Z1 using my mobile phone's GPS
 to embed the location into the image metadata.
 
 ![Z1 maps](images/sensor_image/interval_maps_z1.jpeg)
+
+Each location represents a full 360 scene.
+
+![360 scene](images/sensor_image/360_examples.png)
