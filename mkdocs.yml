@@ -12,6 +12,7 @@ nav:
   - Use Cases: use_cases.md
   - Developer Resources: resources.md
   - Image Metadata: sensors_image.md
+  - THETA X GPS: theta_x_internal_gps.md
   - GPS Accuracy: gps_accuracy.md
   - Compass and Orientation: compass_orientation.md
   - Video Metadata: metadata_video.md
