@@ -10,8 +10,8 @@ with the API.  You can use a bluetooth clicker.
 
 ![bluetooth clicker](images/starting_video/bluetooth_clicker.png)
 
-## APIs
+## APIs - WebAPI
 
-* [startCapture](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/commands/camera.start_capture.md) - WebAPI
+* [startCapture](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/commands/camera.start_capture.md)
 * [stopCapture](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/commands/camera.stop_capture.md)
 * [fileFormat](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/file_format.md)

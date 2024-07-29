@@ -8,7 +8,9 @@ The information below is from community member
 Toyo Fujita and is an example of a manual workflow that
 could be automated.
 
-Some tests tell us 8K 2/10fps video of THETA X would be the best solution for using Streetview Studio. However, the image quality is far from satisfactory [in Toyo's opinion].
+From Toyo:
+
+Some tests tell us 8K 2/10fps video of THETA X would be the best solution for using Streetview Studio. However, the image quality is far from satisfactory.
 
 I think 7.3K THETA Z1 Blue line is awesome. The workflow is more complicated than that of X.
 
@@ -24,7 +26,6 @@ I think 7.3K THETA Z1 Blue line is awesome. The workflow is more complicated tha
 The process above uses UL2GSV by community member
 Dean Zwikel.  More [information on UL2GSV](https://community.theta360.guide/t/ul2gsv-updated-with-macos-support/8695?u=craig) is available
 in the community.
-
 
 ## Video Data
 

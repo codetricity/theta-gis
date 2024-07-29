@@ -8,7 +8,7 @@ CaMM Data in Videos
 * THETA X stores IMU data in CaMM format
 * [Community example of extracting data](https://community.theta360.guide/t/imu-data-libraries/9176?u=craig)
 * [GitHub](https://github.com/monschine/extract_camm/)
-* Note that the example on the right was produced with a Z1 using a special two fisheye video format specified
+* Note that the example above was produced with a Z1 using a special two fisheye video format specified
 [here](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/file_format.md)
 
 ## Using exiftool
