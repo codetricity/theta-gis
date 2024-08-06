@@ -8,7 +8,7 @@ Cameras have the following internal sensors:
 
 * accelerometer
 * gyroscope
-* electronic compass
+* [electronic compass](compass_orientation.md/)
 
 In addition, the THETA X has internal GPS.
 
