@@ -39,7 +39,7 @@ The example below is from community member Toyo Fujita.
 
 ## Hot Tip 🌶️
 
-RICOH THETA cameras include an internal compass that will record the camera orientation. However, if the compass requires calibration, PoseHeadingDegrees and GPSImgDirection will not be recorded.
+RICOH THETA cameras include an internal compass that will record the camera orientation. However, if the compass requires calibration, compass information such as PoseHeadingDegrees and GPSImgDirection will not be recorded.
 
 There is an easy fix. Jump to the [Compass and Orientation](compass_orientation.md) section to get more information and see videos how you can easily recalibrate the compass for both Z1 and X.
 
