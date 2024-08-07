@@ -39,8 +39,8 @@ The example below is from community member Toyo Fujita.
 
 ## Hot Tip 🌶️
 
-RICOH THETA cameras include an internal compass that will record the camera orientation. However, if the compass requires calibration, no compass information will be recorded. A warning icon will show on the LCD for both the Z1 and the X.
+RICOH THETA cameras include an internal compass that will record the camera orientation. However, if the compass requires calibration, PoseHeadingDegrees and GPSImgDirection will not be recorded.
 
-![X compass warning](images/home/x-compass-warning.png)
+There is an easy fix. Jump to the [Compass and Orientation](compass_orientation.md) section to get more information and see videos how you can easily recalibrate the compass for both Z1 and X.
 
-Jump to the [Compass and Orientation](compass_orientation.md) section to get more information and see videos how you can easily recalibrate the compass for both Z1 and X.
+Please note, a warning icon _should_ show on the LCD for both the Z1 and the X. But only if your firmware is up-to-date. THETA X needs to be 2.40.0 or later ([more information](https://community.theta360.guide/t/theta-x-firmware-updated-to-2-40-0-new-compass-error-icon-and-tips-for-how-to-calibrate-compass-handheld-hdr/9468)). RICOH always strongly recommends updating to the latest firmware version.
