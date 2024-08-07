@@ -1,4 +1,4 @@
-# RICOH THETA GPS and IMU Sensors
+# RICOH THETA IMU and GPS Sensors
 
 ![banner](images/home/banner.png)
 
