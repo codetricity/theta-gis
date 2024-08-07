@@ -36,3 +36,11 @@ compass, and orientation sensor data.
 The example below is from community member Toyo Fujita.
 
 ![GPS data file](images/home/gps_data.jpeg)
+
+## Hot Tip 🌶️
+
+RICOH THETA cameras include an internal compass that will record the camera orientation. However, if the compass requires calibration, no compass information will be recorded. A warning icon will show on the LCD for both the Z1 and the X.
+
+![X compass warning](images/home/x-compass-warning.png)
+
+Jump to the [Compass and Orientation](compass_orientation) section to get more information and see videos how you can easily recalibrate the compass for both Z1 and X.
