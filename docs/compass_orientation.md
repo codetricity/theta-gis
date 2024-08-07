@@ -65,7 +65,7 @@ should display the Pose data now.
 5) To test if the Pose data updates, we took 360 pictures while rotating the camera around a pivot. Below, are the values for PoseHeadingDegrees, PosePitchDegrees, and PoseRollDegrees from the image data which update as the position of the camera changes.
 ![firstpos](images/compass_orientation/firstpos.jpg)
 ![secondpos](images/compass_orientation/secondpos.jpg)
-![thirdpos](uimages/compass_orientation/thirdpos.jpg)
+![thirdpos](images/compass_orientation/thirdpos.jpg)
 ![fourthpos](images/compass_orientation/fourthpos.jpg)
 
 ![exiftool results](images/compass_orientation/exiftool-results.png)
