@@ -2,6 +2,8 @@
 
 ![compass](images/compass_orientation/compass.png)
 
+## Compass Recalibration
+
 RICOH THETA cameras include an internal compass that will record the camera orientation.
 If the compass requires calibration, no compass information will be recorded.
 
@@ -35,7 +37,7 @@ In addition, the X can perform topBottomCorrection on live preview: [community l
 
 _Testing provided by community member [@caitlyn](https://community.theta360.guide/u/caitlyn/summary)_
 
-### Test Environment
+<h2>Test Environment</h2>
 
 * Exiftool version - 12.92
 * Ricoh THETA X firmware version - 2.50.2
@@ -43,7 +45,7 @@ _Testing provided by community member [@caitlyn](https://community.theta360.guid
 * Condition of camera - GPS is **on** (solid, white logo appears in top left corner), bluetooth and wifi disabled
 * ImageCapture app to transfer photos
 
-### Additional Testing
+<h2>Additional Testing</h2>
 
 I conducted additional testing on the internal GPS of the Ricoh THETA X to try to retrieve the PoseHeadingDegrees. Here are the steps and challenges I ultimately ran into to get the data.
 
@@ -70,7 +72,7 @@ should display the Pose data now.
 
 ![exiftool results](images/compass_orientation/exiftool-results.png)
 
-### Other Problems
+<h2>Other Problems</h2>
 
 * On one of the cameras we were testing on, we had to reset the settings because the GPS icon did not appear even after enabling the icon. It's key that the icon appears as a solid, white logo and not an outline in the corner.
 * The Mac photos app and Ricoh File transfer app doesn't work for retrieving the GPS information for the camera. Instead, use the Image Capture app if on a Mac.
