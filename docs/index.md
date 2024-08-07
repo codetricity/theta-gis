@@ -43,4 +43,4 @@ RICOH THETA cameras include an internal compass that will record the camera orie
 
 ![X compass warning](images/home/x-compass-warning.png)
 
-Jump to the [Compass and Orientation](compass_orientation) section to get more information and see videos how you can easily recalibrate the compass for both Z1 and X.
+Jump to the [Compass and Orientation](compass_orientation.md) section to get more information and see videos how you can easily recalibrate the compass for both Z1 and X.
