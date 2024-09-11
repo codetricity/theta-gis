@@ -76,14 +76,23 @@ data transmission times or hardware requirements for video processing.
 The 5.7K video also consumes less power, increasing battery use of the RICOH THETA X.  Community
 tests show that the 5.7K 2fps video consumes 2.5W compared to 3.4W for 8K 2fps.
 
-Finally, from THETA X firmware v2.51.0, the 5.7K 2/5/10fps video enables TNR
-(temporal noise reduction), which balances resolution and noise.
-
 !!! warning
     File size and power consumptiion are estimates based on community testing.  The community
     information on power consumption and file size in this document are not official
     camera specifications from RICOH.  Please contact RICOH for official information
     on the RICOH THETA camera.
+
+### Temporal Noise Reduction (TNR) in 5.7K Video
+
+From THETA X firmware v2.51.0, the 5.7K 2/5/10fps video enables TNR
+(temporal noise reduction), which balances resolution and noise.
+As of September 2024, the TNR algorithm cannot be changed or disabled.
+If your application processes video frames in low-light conditons, it
+could be worthwhile to take 8K and 5.7K video of the same scene for
+assessment.
+
+This could be useful in construction, restoration, pipes, tunnels,
+or disaster areas.
 
 ## Video Frame Extraction
 
