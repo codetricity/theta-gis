@@ -15,7 +15,7 @@ nav:
   - THETA X GPS: theta_x_internal_gps.md
   - GPS Accuracy: gps_accuracy.md
   - Compass and Orientation: compass_orientation.md
-  - Video Metadata: metadata_video.md
+  - Video: video.md
   - Stitching: stitching.md
   - gpx file: external_gps.md
   - Starting Video: starting_video.md
