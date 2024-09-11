@@ -29,5 +29,5 @@ in the community.
 
 ## Video Data
 
-Refer to the section on [video metadata, CaMM data](metadata_video.md) for information
+Refer to the section on [video, CaMM data](video.md) for information
 on the metadata format of the video files.

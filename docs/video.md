@@ -54,7 +54,7 @@ Z1 is capable of an unusual video format that produces 2 single fisheye videos w
 
 ## Auto-Level
 
-In the THETA X, the [_topBottomCorrection](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/_top_bottom_correction.md) can be controlled with the THETA API. If set to on, the video will be processed inside
+In the THETA X, video [_topBottomCorrection](https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/_top_bottom_correction.md) can be controlled with the THETA API. If set to on, the video will be processed inside
 the camera to auto-level the video.
 
 If you intend to upload the THETA X video to Google Street View with [Street View Studio](https://streetviewstudio.maps.google.com/), community members recommend that `_topBottomCorrection` be enabled.  As of September 2024, it does
@@ -77,6 +77,12 @@ The 5.7K video also consumes less power, increasing battery use of the RICOH THE
 tests show that the 5.7K 2fps video consumes 2.5W compared to 3.4W for 8K 2fps.
 
 Finally, the 5.7K 2fps video enables TNR (temporal noise reduction), which balances resolution and noise.
+
+!!! warning
+    File size and power consumptiion are estimates based on community testing.  The community
+    information on power consumption and file size in this document are not official
+    camera specifications from RICOH.  Please contact RICOH for official information
+    on the RICOH THETA camera.
 
 ## Video Frame Extraction
 
