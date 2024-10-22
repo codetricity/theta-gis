@@ -1,6 +1,10 @@
 # THETA X Internal GPS
 
-Refer to this [blog post](https://blog.ricoh360.com/en/12219). A summary of
+The RICOH THETA X comes with u-blox ZOE-M8B GNSS module. ref[^1]  
+
+[^1]: <https://www.u-blox.com/en/ricoh-chooses-u-blox-gnss-expertise-for-360-degree-camera>
+
+Refer to this [RICOH blog post](https://blog.ricoh360.com/en/12219). A summary of
 the main points is provided below.
 
 ## System Support

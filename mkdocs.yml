@@ -1,4 +1,4 @@
-site_name: RICOH IMU Sensors and GPS
+site_name: RICOH IMU Sensors and GNSS
 site_author: Oppkey
 site_url: https://codetricity.github.io/theta-gis/
 
@@ -6,6 +6,8 @@ theme:
   name: material
   logo: images/oppkey_logo.jpg
   favicon: images/oppkey_logo.jpg
+  features:
+    - content.footnote.tooltips
 
 
 nav:
@@ -28,3 +30,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - footnotes

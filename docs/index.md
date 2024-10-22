@@ -1,4 +1,4 @@
-# RICOH THETA IMU and GPS Sensors
+# RICOH THETA IMU and GNSS Sensors
 
 ![banner](images/home/banner.png)
 
@@ -14,6 +14,15 @@ visual documentation of large areas.
 In addition to taking single and interval images, people also
 use video frame extraction to easily take thousands of images.
 
+RICOH THETA cameras are started be used in Geographic
+Information Systems (GIS)[^1] Although technologies like LiDAR and GPS
+Real-Time Kinematic (RTK) provide superior accuracy, the RICOH THETA
+X and Z1 can be used to supplement these data sources. RICOH THETA
+cameras are quick to setup, cheaper than traditional GIS equipment
+and may be good enough for some applications.
+
+[^1]: Refer to the U.S. Geological Survey for more information on GIS. <https://www.usgs.gov/faqs/what-geographic-information-system-gis>  
+
 ## Video Frame Extraction Example
 
 In the example below, 8K 360° video is taken at 10fps by simply walking
@@ -23,12 +32,12 @@ compass, and orientation sensor data.
 
 ![streetview](images/home/streetview.jpeg)
 
-## Process to Attach GPS Data to 360° Images
+## Process to Attach GNSS Data to 360° Images
 
-| Shooting Method | Where GPS Data is Saved | How GPS Data is Recorded |
+| Shooting Method | Where GNSS Data is Saved | How GNSS Data is Recorded |
 | -------- | ----------- | --------- |
 | Z1  single or interval shooting of indoor / outdoor still images on map | metadata in [Exif](https://en.wikipedia.org/wiki/Exif) format  Easy to extract | THETA WebAPI accepts GPS data |
-| X single or interval shooting | metadata in Exif format | X internal GPS technology can write metadata inside of camera.  Alternately, the same API as the Z1 can be used to write coordinates |
+| X single or interval shooting | metadata in Exif format | X internal GNSS technology can write metadata inside of camera.  Alternately, the same API as the Z1 can be used to write coordinates |
 | 8K video frame extraction | Data is stored in a separate [CaMM](https://developers.google.com/streetview/publish/camm-spec) track and needs to be matched | X has 8K low fps video with onboard GPS and IMU stored in video metadata |
 
 ## Still Image and Separate GPS Data File Example
