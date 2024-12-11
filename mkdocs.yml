@@ -22,6 +22,7 @@ nav:
   - Stitching: stitching.md
   - gpx file: external_gps.md
   - Starting Video: starting_video.md
+  - Troubleshooting: troubleshooting.md
 
 plugins:
   - social
