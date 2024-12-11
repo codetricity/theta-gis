@@ -1,0 +1,683 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Oppkey">
+      
+      
+        <link rel="canonical" href="https://codetricity.github.io/theta-gis/compass_orientation/">
+      
+      
+        <link rel="prev" href="../gps_accuracy/">
+      
+      
+        <link rel="next" href="../video/">
+      
+      
+      <link rel="icon" href="../images/oppkey_logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Compass and Orientation - RICOH IMU Sensors and GNSS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Compass and Orientation - RICOH IMU Sensors and GNSS" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://codetricity.github.io/theta-gis/assets/images/social/compass_orientation.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://codetricity.github.io/theta-gis/compass_orientation/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Compass and Orientation - RICOH IMU Sensors and GNSS" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://codetricity.github.io/theta-gis/assets/images/social/compass_orientation.png" >
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#internal-compass-and-camera-orientation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RICOH IMU Sensors and GNSS" class="md-header__button md-logo" aria-label="RICOH IMU Sensors and GNSS" data-md-component="logo">
+      
+  <img src="../images/oppkey_logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RICOH IMU Sensors and GNSS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Compass and Orientation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RICOH IMU Sensors and GNSS" class="md-nav__button md-logo" aria-label="RICOH IMU Sensors and GNSS" data-md-component="logo">
+      
+  <img src="../images/oppkey_logo.jpg" alt="logo">
+
+    </a>
+    RICOH IMU Sensors and GNSS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_cases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Cases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sensors_image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Image Metadata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theta_x_internal_gps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    THETA X GPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gps_accuracy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPS Accuracy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Compass and Orientation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Compass and Orientation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#compass-recalibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compass Recalibration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pose-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pose Metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topbottomcorrection" class="md-nav__link">
+    <span class="md-ellipsis">
+      TopBottomCorrection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-poseheadingdegrees-with-theta-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing PoseHeadingDegrees with THETA X
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stitching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stitching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external_gps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    gpx file
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../starting_video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starting Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#compass-recalibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compass Recalibration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pose-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pose Metadata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topbottomcorrection" class="md-nav__link">
+    <span class="md-ellipsis">
+      TopBottomCorrection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-poseheadingdegrees-with-theta-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing PoseHeadingDegrees with THETA X
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="internal-compass-and-camera-orientation">Internal Compass and Camera Orientation</h1>
+<p><img alt="compass" src="../images/compass_orientation/compass.png" /></p>
+<h2 id="compass-recalibration">Compass Recalibration</h2>
+<p>RICOH THETA cameras include an internal compass that will record the camera orientation.
+If the compass requires calibration, no compass information will be recorded.</p>
+<p>This is the expected metadata from the RICOH THETA X using the internal GPS. No mobile app, just the camera.</p>
+<p><img alt="metadata" src="../images/compass_orientation/metadata.jpg" /></p>
+<p>To recalibrate the compass, use a figure 8 motion shown in these videos: <a href="https://youtu.be/Q9e7FoWYRY8">Z1</a>,
+<a href="https://youtu.be/6UX2QBLjZbE">X</a>.</p>
+<h2 id="pose-metadata">Pose Metadata</h2>
+<p>Refer to the <a href="https://developers.google.com/streetview/spherical-metadata">Google Spherical Metadata specification</a>
+for information on the metadata needed for Streetview
+placement.</p>
+<p><img alt="pose metadata" src="../images/compass_orientation/pose_metadata2.png" /></p>
+<h2 id="topbottomcorrection">TopBottomCorrection</h2>
+<p>The camera will automatically level the image using internal sensors.
+For the Z1, only still images are supported.  For the X, both still images and video are supported.
+The behavior is controlled with this API
+<a href="https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/_top_bottom_correction.md">_topBottomCorrection</a>.</p>
+<p>In addition, the X can perform topBottomCorrection on live preview: <a href="https://community.theta360.guide/t/is-it-possible-to-get-ricoh-camera-orientation-from-live-preview/9510/6?u=craig">community link</a> and <a href="https://community.theta360.guide/t/ricoh-theta-disable-auto-level-topbottomcorrection-for-interval-shooting/9338?u=craig">additional community information on topBottomCorrection</a>.</p>
+<p><img alt="top bottom" src="../images/compass_orientation/top_bottom.png" /></p>
+<h2 id="testing-poseheadingdegrees-with-theta-x">Testing PoseHeadingDegrees with THETA X</h2>
+<p><em>Testing provided by community member <a href="https://community.theta360.guide/u/caitlyn/summary">@caitlyn</a></em></p>
+<h2>Test Environment</h2>
+
+<ul>
+<li>Exiftool version - 12.92</li>
+<li>Ricoh THETA X firmware version - 2.50.2</li>
+<li>Mac OS version - Ventura 13.6.7</li>
+<li>Condition of camera - GPS is <strong>on</strong> (solid, white logo appears in top left corner), bluetooth and wifi disabled</li>
+<li>ImageCapture app to transfer photos</li>
+</ul>
+<h2>Additional Testing</h2>
+
+<p>I conducted additional testing on the internal GPS of the Ricoh THETA X to try to retrieve the PoseHeadingDegrees. Here are the steps and challenges I ultimately ran into to get the data.</p>
+<p>1) Ensure that the Location Setting of the Ricoh camera is turned on before taking a picture. You should see the location icon on the upper left-hand corner of the Ricoh THETA X.
+<img alt="location setting" src="../images/compass_orientation/location-setting.jpg" />
+<img alt="location setting 2" src="../images/compass_orientation/location-setting2.jpg" /></p>
+<p>2) Capture a picture and transfer it to your computer. I'm using a Mac and found that the Pose information only appeared if I transferred the picture using the <strong><a href="https://support.apple.com/guide/image-capture/transfer-images-imgcp1003/mac">ImageCapture app</a></strong>. The Photos app on the Mac seems to strip out the GPS data.</p>
+<p>3) Download and install the <strong><a href="https://exiftool.org/install.html">ExifTool</a></strong> version 12.92 which is used to read metadata from the files. If using a Mac, you may have to bypass the security notification during installation.
+<img alt="macos warning" src="../images/compass_orientation/macos-warning.png" /></p>
+<p>4) In the location of your downloaded photos, the command</p>
+<p><code>exiftool -v R0010255.JPG |grep Pose</code></p>
+<p>should display the Pose data now.</p>
+<p>5) To test if the Pose data updates, we took 360 pictures while rotating the camera around a pivot. Below, are the values for PoseHeadingDegrees, PosePitchDegrees, and PoseRollDegrees from the image data which update as the position of the camera changes.
+<img alt="firstpos" src="../images/compass_orientation/firstpos.jpg" />
+<img alt="secondpos" src="../images/compass_orientation/secondpos.jpg" />
+<img alt="thirdpos" src="../images/compass_orientation/thirdpos.jpg" />
+<img alt="fourthpos" src="../images/compass_orientation/fourthpos.jpg" /></p>
+<p><img alt="exiftool results" src="../images/compass_orientation/exiftool-results.png" /></p>
+<h2>Other Problems</h2>
+
+<ul>
+<li>On one of the cameras we were testing on, we had to reset the settings because the GPS icon did not appear even after enabling the icon. It's key that the icon appears as a solid, white logo and not an outline in the corner.</li>
+<li>The Mac photos app and Ricoh File transfer app doesn't work for retrieving the GPS information for the camera. Instead, use the Image Capture app if on a Mac.</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

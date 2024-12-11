@@ -1,0 +1,783 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Oppkey">
+      
+      
+        <link rel="canonical" href="https://codetricity.github.io/theta-gis/video/">
+      
+      
+        <link rel="prev" href="../compass_orientation/">
+      
+      
+        <link rel="next" href="../stitching/">
+      
+      
+      <link rel="icon" href="../images/oppkey_logo.jpg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Video - RICOH IMU Sensors and GNSS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Video - RICOH IMU Sensors and GNSS" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://codetricity.github.io/theta-gis/assets/images/social/video.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://codetricity.github.io/theta-gis/video/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Video - RICOH IMU Sensors and GNSS" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://codetricity.github.io/theta-gis/assets/images/social/video.png" >
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ricoh-theta-video" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RICOH IMU Sensors and GNSS" class="md-header__button md-logo" aria-label="RICOH IMU Sensors and GNSS" data-md-component="logo">
+      
+  <img src="../images/oppkey_logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RICOH IMU Sensors and GNSS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Video
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RICOH IMU Sensors and GNSS" class="md-nav__button md-logo" aria-label="RICOH IMU Sensors and GNSS" data-md-component="logo">
+      
+  <img src="../images/oppkey_logo.jpg" alt="logo">
+
+    </a>
+    RICOH IMU Sensors and GNSS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use_cases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Use Cases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Developer Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sensors_image/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Image Metadata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../theta_x_internal_gps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    THETA X GPS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gps_accuracy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPS Accuracy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compass_orientation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Compass and Orientation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Video
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Video
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#camm-data-in-videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      CaMM Data in Videos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CaMM Data in Videos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-exiftool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using exiftool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z1-camm-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Z1 CaMM Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-8k-and-57k" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing 8K and 5.7K
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comparing 8K and 5.7K">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temporal-noise-reduction-tnr-in-57k-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temporal Noise Reduction (TNR) in 5.7K Video
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-frame-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video Frame Extraction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stitching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stitching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external_gps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    gpx file
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../starting_video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Starting Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#camm-data-in-videos" class="md-nav__link">
+    <span class="md-ellipsis">
+      CaMM Data in Videos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CaMM Data in Videos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-exiftool" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using exiftool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#z1-camm-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Z1 CaMM Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto-Level
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-8k-and-57k" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing 8K and 5.7K
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comparing 8K and 5.7K">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temporal-noise-reduction-tnr-in-57k-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temporal Noise Reduction (TNR) in 5.7K Video
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-frame-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video Frame Extraction
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="ricoh-theta-video">RICOH THETA Video</h1>
+<p><img alt="CaMM Data" src="../images/video_metadata/camm_data.png" /></p>
+<h2 id="camm-data-in-videos">CaMM Data in Videos</h2>
+<ul>
+<li><a href="https://github.com/ricohapi/theta-api-specs/blob/main/theta-metadata/README.md">Official THETA Metadata Specification</a></li>
+<li>THETA X stores IMU data in CaMM format</li>
+<li><a href="https://community.theta360.guide/t/imu-data-libraries/9176?u=craig">Community example of extracting data</a></li>
+<li><a href="https://github.com/monschine/extract_camm/">GitHub</a></li>
+<li>Note that the example above was produced with a Z1 using a special two fisheye video format specified
+<a href="https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/file_format.md">here</a></li>
+</ul>
+<h3 id="using-exiftool">Using exiftool</h3>
+<div class="highlight"><pre><span></span><code>exiftool -ee -V3 path/to/your/video.MP4 &gt; path/to/results.txt
+</code></pre></div>
+<p>Output</p>
+<div class="highlight"><pre><span></span><code>Track2 Type=&#39;camm&#39; Format=&#39;camm&#39;, Sample 1 of 3642 (16 bytes)
+ 147e567: 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 [................]
+SampleTime = 0
+SampleDuration = 0
+camm2 (SubDirectory) --&gt;
+- Tag &#39;camm&#39; (16 bytes):
+ 147e567: 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 [................]
++ [BinaryData directory, 16 bytes]
+| AngularVelocity = 0 0 0
+| - Tag 0x0004 (12 bytes, float[3]):
+|  147e56b: 00 00 00 00 00 00 00 00 00 00 00 00             [............]
+Track2 Type=&#39;camm&#39; Format=&#39;camm&#39;, Sample 2 of 3642 (16 bytes)
+ 147e577: 00 00 03 00 00 13 c7 3f c0 27 9e 40 00 28 e3 3d [.......?.&#39;.@.(.=]
+SampleTime = 0
+SampleDuration = 0.005
+camm3 (SubDirectory) --&gt;
+- Tag &#39;camm&#39; (16 bytes):
+ 147e577: 00 00 03 00 00 13 c7 3f c0 27 9e 40 00 28 e3 3d [.......?.&#39;.@.(.=]
++ [BinaryData directory, 16 bytes]
+| Acceleration = 1.55526733398438 4.94235229492188 0.110916137695312
+| - Tag 0x0004 (12 bytes, float[3]):
+|  147e57b: 00 13 c7 3f c0 27 9e 40 00 28 e3 3d             [...?.&#39;.@.(.=]
+</code></pre></div>
+<h3 id="z1-camm-data">Z1 CaMM Data</h3>
+<p><img alt="Z1 single fisheye" src="../images/video_metadata/single_fisheye.png" /></p>
+<p><a href="https://community.theta360.guide/t/ricoh-theta-z1-firmware-3-01-1-adds-single-fisheye-simultaneous-recording-of-2-videos-50min-video-length/9095?u=craig">community information on single-fisheye dual video recording</a></p>
+<p>Z1 is capable of an unusual video format that produces 2 single fisheye videos with CaMM data.  The videos need to be stitched in the customer’s own cloud.  RICOH does not provide an SDK or example for the stitching.  However, lens information is available to help with the process.</p>
+<h2 id="auto-level">Auto-Level</h2>
+<p>In the THETA X, video <a href="https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/_top_bottom_correction.md">_topBottomCorrection</a> can be controlled with the THETA API. If set to on, the video will be processed inside
+the camera to auto-level the video.</p>
+<p>If you intend to upload the THETA X video to Google Street View with <a href="https://streetviewstudio.maps.google.com/">Street View Studio</a>, community members recommend that <code>_topBottomCorrection</code> be enabled.  As of September 2024, it does
+not appear that Google Street View Studio handles level correction post-processing based on the IMU sensor data.</p>
+<p>If you plan to handle level compensation in your own application or want the original camera orientation in the
+video frames, then turn <code>_topBottomCorrection</code> off.</p>
+<h2 id="comparing-8k-and-57k">Comparing 8K and 5.7K</h2>
+<p>Available video file formats are listed <a href="https://github.com/ricohapi/theta-api-specs/blob/main/theta-web-api-v2.1/options/file_format.md">in the official THETA API documentation</a>. In addition to 8K at 10fps, 5fps, and 2fps, there is also 5.7K video at low framerates.</p>
+<p>Although the 8K video offers higher resolution, there are tradeoffs to consider before immediately
+jumping to the 8K video format.</p>
+<p>The 5.7K video offers a smaller video size. Community tests suggest that the 5.7K video is around 30% of the 8K video. Smaller file sizes may be useful in reducing
+data transmission times or hardware requirements for video processing.</p>
+<p>The 5.7K video also consumes less power, increasing battery use of the RICOH THETA X.  Community
+tests show that the 5.7K 2fps video consumes 2.5W compared to 3.4W for 8K 2fps.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>File size and power consumptiion are estimates based on community testing.  The community
+information on power consumption and file size in this document are not official
+camera specifications from RICOH.  Please contact RICOH for official information
+on the RICOH THETA camera.</p>
+</div>
+<h3 id="temporal-noise-reduction-tnr-in-57k-video">Temporal Noise Reduction (TNR) in 5.7K Video</h3>
+<p>From THETA X firmware v2.51.0, the 5.7K 2/5/10fps video enables TNR
+(temporal noise reduction), which balances resolution and noise.
+As of September 2024, the TNR algorithm cannot be changed or disabled.
+If your application processes video frames in low-light conditons, it
+could be worthwhile to take 8K and 5.7K video of the same scene for
+assessment.</p>
+<p>This could be useful in construction, restoration, pipes, tunnels,
+or disaster areas.</p>
+<h2 id="video-frame-extraction">Video Frame Extraction</h2>
+<p>There are many solutions to extract video frames.
+ffmpeg is a popular open source package.  There's an <a href="https://community.theta360.guide/t/video-frame-extraction-with-ffmpeg/7738?u=craig">example of
+video frame extraction</a>
+in the community.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
